@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.github.a-pz.struts.thymeleaf</groupId>
+	<artifactId>struts7-thymeleaf3-sampleapp</artifactId>
+	<version>7.0.0</version>
+	<packaging>war</packaging>
+	<name>struts7-thymeleaf3-sampleapp</name>
+	
+	<properties>
+		<struts2.version>7.0.0</struts2.version>
+		<log4j2.version>2.24.3</log4j2.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<struts7-thymeleaf3-plugin-version>7.0.0</struts7-thymeleaf3-plugin-version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-core</artifactId>
+			<version>${struts2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-convention-plugin</artifactId>
+			<version>${struts2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>5.3.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.a-pz</groupId>
+			<artifactId>struts7-thymeleaf3-plugin</artifactId>
+			<version>${struts7-thymeleaf3-plugin-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.36</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-nop</artifactId>
+			<version>1.7.22</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.13.0</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>17</source>
+					<release>17</release>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="ja">
+<head>
+    <title>struts2(7)-thymeleaf sample app.</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/{version}/css/bootstrap.min.css(version=5.3.3)}" />
+    <script th:src="@{/webjars/bootstrap/{version}/js/bootstrap.min.js(version=5.3.3)}"></script>
+</head>
+<body>
+<main class="d-flex flex-nowrap">
+    <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link ">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                Dashboard
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link ">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                Orders
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link ">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                Products
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link ">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                Customers
+            </a>
+        </li>
+    </ul>
+    <div class="container">
+        <span th:text="${actionMessages}"></span>
+
+        <form>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" name="name" value="HTML" th:value="${name}"  >
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>
